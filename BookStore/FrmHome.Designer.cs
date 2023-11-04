@@ -66,6 +66,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnThemSPinHD = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSPK)).BeginInit();
             this.SuspendLayout();
@@ -398,11 +399,21 @@
             this.btnThemSPinHD.UseVisualStyleBackColor = true;
             this.btnThemSPinHD.Click += new System.EventHandler(this.btnThemSPinHD_Click);
             // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Location = new System.Drawing.Point(910, 758);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(159, 23);
+            this.btnThanhToan.TabIndex = 38;
+            this.btnThanhToan.Text = "THANH TOÁN";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1287, 807);
+            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.btnThemSPinHD);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -491,5 +502,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnThemSPinHD;
+        private System.Windows.Forms.Button btnThanhToan;
     }
 }

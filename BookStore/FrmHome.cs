@@ -72,10 +72,7 @@ namespace BookStore
             {
                 MessageBox.Show("Thất bại");
             }
-            txtMaKH.Clear();
-            txtTenKH.Clear();
-            txtSDT.Clear();
-            txtDiemTL.Text = "0";
+            
         }
 
         private void btnTimKH_Click(object sender, EventArgs e)

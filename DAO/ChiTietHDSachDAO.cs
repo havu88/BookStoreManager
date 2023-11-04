@@ -17,8 +17,9 @@ namespace DAO
 
         public int themChiTietHDSach(string maHD, string maSach, int soLuong, float donGia)
         {
+            int result = -1;
             string query = @"proc_ThemChiTietHDSach @MaHD , @MaSach  , @SoLuong , @DonGia ";
-            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maHD, maSach, soLuong , donGia });
+            result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maHD, maSach, soLuong , donGia });
 
             return result;
         }
