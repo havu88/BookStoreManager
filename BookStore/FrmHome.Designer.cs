@@ -57,7 +57,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btnThemHD = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThemSachinHD = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtMaSP = new System.Windows.Forms.TextBox();
+            this.txtDonGiaSP = new System.Windows.Forms.TextBox();
+            this.txtSoLuongSP = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnThemSPinHD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSPK)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +90,7 @@
             this.dtgvSPK.RowTemplate.Height = 24;
             this.dtgvSPK.Size = new System.Drawing.Size(765, 352);
             this.dtgvSPK.TabIndex = 1;
+            this.dtgvSPK.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvSPK_CellClick);
             // 
             // label1
             // 
@@ -311,21 +320,98 @@
             this.btnThemHD.UseVisualStyleBackColor = true;
             this.btnThemHD.Click += new System.EventHandler(this.btnThemHD_Click);
             // 
-            // button1
+            // btnThemSachinHD
             // 
-            this.button1.Location = new System.Drawing.Point(1113, 511);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Thêm Sách vào HD";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThemSachinHD.Location = new System.Drawing.Point(1116, 512);
+            this.btnThemSachinHD.Name = "btnThemSachinHD";
+            this.btnThemSachinHD.Size = new System.Drawing.Size(159, 23);
+            this.btnThemSachinHD.TabIndex = 29;
+            this.btnThemSachinHD.Text = "Thêm Sách vào HD";
+            this.btnThemSachinHD.UseVisualStyleBackColor = true;
+            this.btnThemSachinHD.Click += new System.EventHandler(this.btnThemSachinHD_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(798, 573);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(231, 32);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "Sản Phẩm Khác";
+            // 
+            // txtMaSP
+            // 
+            this.txtMaSP.Location = new System.Drawing.Point(829, 670);
+            this.txtMaSP.Name = "txtMaSP";
+            this.txtMaSP.Size = new System.Drawing.Size(117, 22);
+            this.txtMaSP.TabIndex = 31;
+            // 
+            // txtDonGiaSP
+            // 
+            this.txtDonGiaSP.Location = new System.Drawing.Point(970, 670);
+            this.txtDonGiaSP.Name = "txtDonGiaSP";
+            this.txtDonGiaSP.Size = new System.Drawing.Size(117, 22);
+            this.txtDonGiaSP.TabIndex = 32;
+            // 
+            // txtSoLuongSP
+            // 
+            this.txtSoLuongSP.Location = new System.Drawing.Point(1116, 670);
+            this.txtSoLuongSP.Name = "txtSoLuongSP";
+            this.txtSoLuongSP.Size = new System.Drawing.Size(117, 22);
+            this.txtSoLuongSP.TabIndex = 33;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(826, 640);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 16);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Mã Sản Phẩm";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(967, 640);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(76, 16);
+            this.label16.TabIndex = 35;
+            this.label16.Text = "Đơn Giá SP";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(1113, 640);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 16);
+            this.label17.TabIndex = 36;
+            this.label17.Text = "Số Lượng";
+            // 
+            // btnThemSPinHD
+            // 
+            this.btnThemSPinHD.Location = new System.Drawing.Point(1116, 720);
+            this.btnThemSPinHD.Name = "btnThemSPinHD";
+            this.btnThemSPinHD.Size = new System.Drawing.Size(159, 23);
+            this.btnThemSPinHD.TabIndex = 37;
+            this.btnThemSPinHD.Text = "Thêm SP vào HD";
+            this.btnThemSPinHD.UseVisualStyleBackColor = true;
+            this.btnThemSPinHD.Click += new System.EventHandler(this.btnThemSPinHD_Click);
             // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 807);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1287, 807);
+            this.Controls.Add(this.btnThemSPinHD);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtSoLuongSP);
+            this.Controls.Add(this.txtDonGiaSP);
+            this.Controls.Add(this.txtMaSP);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.btnThemSachinHD);
             this.Controls.Add(this.btnThemHD);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -396,6 +482,14 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnThemHD;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThemSachinHD;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtMaSP;
+        private System.Windows.Forms.TextBox txtDonGiaSP;
+        private System.Windows.Forms.TextBox txtSoLuongSP;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button btnThemSPinHD;
     }
 }

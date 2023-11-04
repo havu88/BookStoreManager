@@ -64,7 +64,7 @@ namespace BookStore
             string sdt = txtSDT.Text;
 
             int result = KhachHangBUS.Instance.themKhachHang(maKH, tenKH, sdt);
-            if (result == 1)
+            if (result != -1)
             {
                 MessageBox.Show("Thành công");
             }
@@ -119,7 +119,7 @@ namespace BookStore
             string maNV = txtMaNV.Text;
 
             int result = HoaDonBUS.Instance.themHoaDon(maHD, maKH, maNV);
-            if (result == 1)
+            if (result != -1)
             {
                 MessageBox.Show("Thành công");
             }
@@ -128,6 +128,58 @@ namespace BookStore
                 MessageBox.Show("Thất bại");
             }
 
+        }
+
+        private void btnThemSachinHD_Click(object sender, EventArgs e)
+        {
+            string maHD = txtMaHD.Text;
+            string maSach = txtMaSach.Text;
+            float donGia = (float)Convert.ToDouble(txtDonGiaSach.Text);
+            int soLuong = Convert.ToInt32(txtSoLuongSach.Text);
+
+            int result = ChiTietHDSachBUS.Instance.themChiTietHDSach(maHD, maSach, soLuong, donGia);
+            if (result != -1)
+            {
+                MessageBox.Show("Thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thất bại");
+            }
+        }
+
+        private void dtgvSPK_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Kiểm tra người dùng đã nhấp vào một dòng hợp lệ hay không
+            {
+                DataGridViewRow row = dtgvSPK.Rows[e.RowIndex];
+
+                // Lấy giá trị từ các ô trong dòng được chọn
+                string maSP = row.Cells["Mã SP"].Value.ToString();
+                int donGia = Convert.ToInt32(row.Cells["Đơn Giá"].Value);
+
+                txtMaSP.Text = maSP;
+                txtDonGiaSP.Text = donGia.ToString();
+
+            }
+        }
+
+        private void btnThemSPinHD_Click(object sender, EventArgs e)
+        {
+            string maHD = txtMaHD.Text;
+            string maSP = txtMaSP.Text;
+            float donGia = (float)Convert.ToDouble(txtDonGiaSP.Text);
+            int soLuong = Convert.ToInt32(txtSoLuongSP.Text);
+
+            int result = ChiTietHDSPKBUS.Instance.themChiTietHDSPK(maHD, maSP, soLuong, donGia);
+            if (result != -1)
+            {
+                MessageBox.Show("Thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thất bại");
+            }
         }
     }
 }
