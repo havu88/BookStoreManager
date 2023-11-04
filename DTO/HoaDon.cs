@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace DTO
         {
         }
 
+        
         public HoaDon(string maHD, DateTime ngayXuatHD, string maKH, string maNV, int soLuong, float triGiaHD, string trangThai)
         {
             this.maHD = maHD;

@@ -178,5 +178,18 @@ namespace BookStore
                 MessageBox.Show("Thất bại");
             }
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            string maHD = txtMaHD.Text;
+
+            DataTable table = HoaDonBUS.Instance.thanhToanHD(maHD); 
+
+            if (table != null)
+            {
+                FrmHoaDon frmHoaDon = new FrmHoaDon(table);  
+                frmHoaDon.ShowDialog();
+            }
+        }
     }
 }

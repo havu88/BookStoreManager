@@ -407,6 +407,7 @@
             this.btnThanhToan.TabIndex = 38;
             this.btnThanhToan.Text = "THANH TOÁN";
             this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // FrmHome
             // 

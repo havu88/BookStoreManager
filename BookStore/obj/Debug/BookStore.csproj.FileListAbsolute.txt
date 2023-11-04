@@ -38,3 +38,4 @@ D:\HK1_2023\DBMS\BookStore\BookStore\BookStore\obj\Debug\BookStore.csproj.CoreCo
 D:\HK1_2023\DBMS\BookStore\BookStore\BookStore\obj\Debug\BookStore.csproj.CopyComplete
 D:\HK1_2023\DBMS\BookStore\BookStore\BookStore\obj\Debug\BookStore.exe
 D:\HK1_2023\DBMS\BookStore\BookStore\BookStore\obj\Debug\BookStore.pdb
+D:\HK1_2023\DBMS\BookStore\BookStore\BookStore\obj\Debug\BookStore.FrmHoaDon.resources

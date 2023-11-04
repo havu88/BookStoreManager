@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,17 @@ namespace DAO
             return result;
         }
 
+        public DataTable thanhToanHD(string maHD)
+        {
+            string query = @"proc_ThanhToanHD @maHD ";
+            DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { maHD });
+            if (table.Rows.Count > 0)
+            {
+                
+                return table;
+            }
+            return null;
+        }
 
     }
 }
