@@ -27,15 +27,18 @@ namespace DAO
                 DataTable table = DataProvider.Instance.ExecuteQuery(query);
                 foreach (DataRow row in table.Rows)
                 {
-                    Sach sach = new Sach();
+                    Sach sach = new Sach(row);
                     danhSachSach.Add(sach);
                 }
+                
                 return danhSachSach;
             }
             catch
             {
                 return null;
             }
+
+            
         }
     }
 }

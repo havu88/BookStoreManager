@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DTO
@@ -15,6 +17,14 @@ namespace DTO
 
         public SanPhamKhac()
         {
+        }
+
+        public SanPhamKhac(DataRow row)
+        {
+            MaSPK = row["MaSPK"].ToString();
+            TenSP = row["TenSP"].ToString();
+            DonGia = (float)Convert.ToDouble(row["DonGia"]);
+            TonKho = (int)row["TonKho"];
         }
 
         public SanPhamKhac(string maSPK, string tenSP, float donGia, int tonKho)

@@ -32,16 +32,29 @@ namespace BookStore
             dataTableSach.Columns.Add("TenSach", typeof(string));
             dataTableSach.Columns.Add("DonGia", typeof(int));
             dataTableSach.Columns.Add("TonKho", typeof(int));
-            Debug.WriteLine(danhSachSach[0].MaSach);
             foreach (Sach sach in danhSachSach)
             {
                 dataTableSach.Rows.Add(sach.MaSach, sach.MaNhomSach, sach.TenSach, sach.DonGia, sach.TonKho);
             }
+
             dtgvSach.DataSource = dataTableSach;
-            dtgvSach.Refresh(); 
 
             List<SanPhamKhac> danhSachSanPhamKhac = SanPhamKhacBUS.Instance.hienThiSanPhamKhac();
-            dtgvSPK.DataSource = danhSachSanPhamKhac;
+
+            DataTable dataTableSPK = new DataTable();
+
+            dataTableSPK.Columns.Add("MaSPK", typeof(string));
+            dataTableSPK.Columns.Add("TenSPK", typeof(string));
+            dataTableSPK.Columns.Add("DonGia", typeof(int));
+            dataTableSPK.Columns.Add("TonKho", typeof(int));
+            foreach (SanPhamKhac sanPhamKhac in danhSachSanPhamKhac)
+            {
+                dataTableSPK.Rows.Add(sanPhamKhac.MaSPK, sanPhamKhac.TenSP, sanPhamKhac.DonGia, sanPhamKhac.TonKho);
+            }
+
+
+            
+            dtgvSPK.DataSource = dataTableSPK;
 
         }
 

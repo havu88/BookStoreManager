@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,15 @@ namespace DTO
 
         public Sach()
         {
+        }
+
+        public Sach(DataRow row)
+        {
+            MaSach = row["MaSach"].ToString();
+            MaNhomSach = row["MaNhomSach"].ToString();
+            TenSach = row["TenSach"].ToString();
+            DonGia = (float)Convert.ToDouble(row["DonGia"]);
+            TonKho = (int)row["TonKho"];
         }
 
         public Sach(string maSach, string maNhomSach, string tenSach, float donGia, int tonKho)
