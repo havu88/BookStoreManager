@@ -29,32 +29,32 @@ namespace DTO
 
         public string MaSach
         {
-            get { return maSach; }
-            set { maSach = value; }
+            get => maSach;
+            set => maSach = value; 
         }
 
         public string MaNhomSach
         {
-            get { return maNhomSach; }
-            set { maNhomSach = value; }
+            get => maNhomSach;
+            set => maNhomSach = value; 
         }
 
         public string TenSach
         {
-            get { return tenSach; }
-            set { tenSach = value; }
+            get => tenSach;
+            set => tenSach = value;
         }
 
         public float DonGia
         {
-            get { return donGia; }
-            set { donGia = value; }
+            get => donGia;
+            set => donGia = value; 
         }
 
         public int TonKho
         {
-            get { return tonKho; }
-            set { tonKho = value; }
+            get => tonKho;
+            set => tonKho = value;
         }
     }
 }

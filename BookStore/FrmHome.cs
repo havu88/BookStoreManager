@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,12 +26,13 @@ namespace BookStore
             List<Sach> danhSachSach = SachBUS.Instance.hienThiSach();
             
             DataTable dataTableSach = new DataTable();
+
             dataTableSach.Columns.Add("MaSach", typeof(string));
             dataTableSach.Columns.Add("MaNhomSach", typeof(string));
             dataTableSach.Columns.Add("TenSach", typeof(string));
             dataTableSach.Columns.Add("DonGia", typeof(int));
             dataTableSach.Columns.Add("TonKho", typeof(int));
-
+            Debug.WriteLine(danhSachSach[0].MaSach);
             foreach (Sach sach in danhSachSach)
             {
                 dataTableSach.Rows.Add(sach.MaSach, sach.MaNhomSach, sach.TenSach, sach.DonGia, sach.TonKho);
@@ -50,14 +52,18 @@ namespace BookStore
             string sdt = txtSDT.Text;   
 
             int result = KhachHangBUS.Instance.themKhachHang(maKH, tenKH, sdt);
-            if (result != 0)
+            if (result == 1)
             {
-                MessageBox.Show("Thành Công");
+                MessageBox.Show("Thành công");
             }
             else
             {
                 MessageBox.Show("Thất bại");
             }
+            txtMaKH.Clear();
+            txtTenKH.Clear();
+            txtSDT.Clear();
+            txtDiemTL.Text = "0";
         }
 
         private void btnTimKH_Click(object sender, EventArgs e)

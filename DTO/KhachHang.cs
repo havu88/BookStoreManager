@@ -28,10 +28,10 @@ namespace DTO
 
         public KhachHang(DataRow row)
         {
-            MaKH = row["TenTK"].ToString();
-            TenKH = row["MK"].ToString();
-            SDT = row["Email"].ToString();
-            DiemTL = (float)Convert.ToDouble(row["VaiTro"]);
+            MaKH = row["MaKH"].ToString();
+            TenKH = row["TenKH"].ToString();
+            SDT = row["SDT"].ToString();
+            DiemTL = (float)Convert.ToDouble(row["DiemTL"]);
         }
 
         public string MaKH

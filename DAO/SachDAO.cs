@@ -20,16 +20,22 @@ namespace DAO
 
         public List<Sach> hienThiSach()
         {
-            List<Sach> danhSachSach = new List<Sach>();
-            string query = @"proc_DanhSachSach";
-            DataTable table = DataProvider.Instance.ExecuteQuery(query);
-            foreach (DataRow row in table.Rows)
-            {
-                Sach sach = new Sach();
-                danhSachSach.Add(sach);
+            try
+            { 
+                List<Sach> danhSachSach = new List<Sach>();
+                string query = @"proc_DanhSachSach";
+                DataTable table = DataProvider.Instance.ExecuteQuery(query);
+                foreach (DataRow row in table.Rows)
+                {
+                    Sach sach = new Sach();
+                    danhSachSach.Add(sach);
+                }
+                return danhSachSach;
             }
-            return danhSachSach;
-
+            catch
+            {
+                return null;
+            }
         }
     }
 }

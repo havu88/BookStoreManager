@@ -33,6 +33,11 @@ namespace BookStore
                 txtTaiKhoan.Clear();
                 txtMatKhau.Clear();
             }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+            }
+                
         }
     }
 }

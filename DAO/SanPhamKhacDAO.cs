@@ -19,15 +19,22 @@ namespace DAO
 
         public List<SanPhamKhac> hienThiSanPhamKhac()
         {
-            List<SanPhamKhac> danhSachSanPhamKhac= new List<SanPhamKhac>();
-            string query = @"proc_DanhSachSanPhamKhac";
-            DataTable table = DataProvider.Instance.ExecuteQuery(query);
-            foreach (DataRow row in table.Rows)
+            try
             {
-                SanPhamKhac sanPhamKhac = new SanPhamKhac();
-                danhSachSanPhamKhac.Add(sanPhamKhac);
+                List<SanPhamKhac> danhSachSanPhamKhac = new List<SanPhamKhac>();
+                string query = @"proc_DanhSachSanPhamKhac";
+                DataTable table = DataProvider.Instance.ExecuteQuery(query);
+                foreach (DataRow row in table.Rows)
+                {
+                    SanPhamKhac sanPhamKhac = new SanPhamKhac();
+                    danhSachSanPhamKhac.Add(sanPhamKhac);
+                }
+                return danhSachSanPhamKhac;
             }
-            return danhSachSanPhamKhac;
+            catch 
+            {
+                return null;
+            }
 
         }
     }
