@@ -24,14 +24,14 @@ namespace BookStore
         private void loadData()
         {
             List<Sach> danhSachSach = SachBUS.Instance.hienThiSach();
-            
+
             DataTable dataTableSach = new DataTable();
 
-            dataTableSach.Columns.Add("MaSach", typeof(string));
-            dataTableSach.Columns.Add("MaNhomSach", typeof(string));
-            dataTableSach.Columns.Add("TenSach", typeof(string));
-            dataTableSach.Columns.Add("DonGia", typeof(int));
-            dataTableSach.Columns.Add("TonKho", typeof(int));
+            dataTableSach.Columns.Add("Mã Sách", typeof(string));
+            dataTableSach.Columns.Add("Mã Nhóm Sách", typeof(string));
+            dataTableSach.Columns.Add("Tên Sách", typeof(string));
+            dataTableSach.Columns.Add("Đơn Giá", typeof(int));
+            dataTableSach.Columns.Add("Tồn Kho", typeof(int));
             foreach (Sach sach in danhSachSach)
             {
                 dataTableSach.Rows.Add(sach.MaSach, sach.MaNhomSach, sach.TenSach, sach.DonGia, sach.TonKho);
@@ -43,17 +43,16 @@ namespace BookStore
 
             DataTable dataTableSPK = new DataTable();
 
-            dataTableSPK.Columns.Add("MaSPK", typeof(string));
-            dataTableSPK.Columns.Add("TenSPK", typeof(string));
-            dataTableSPK.Columns.Add("DonGia", typeof(int));
-            dataTableSPK.Columns.Add("TonKho", typeof(int));
+            dataTableSPK.Columns.Add("Mã SP", typeof(string));
+            dataTableSPK.Columns.Add("Tên SP", typeof(string));
+            dataTableSPK.Columns.Add("Đơn Giá", typeof(int));
+            dataTableSPK.Columns.Add("Tồn Kho", typeof(int));
             foreach (SanPhamKhac sanPhamKhac in danhSachSanPhamKhac)
             {
                 dataTableSPK.Rows.Add(sanPhamKhac.MaSPK, sanPhamKhac.TenSP, sanPhamKhac.DonGia, sanPhamKhac.TonKho);
             }
 
 
-            
             dtgvSPK.DataSource = dataTableSPK;
 
         }
@@ -62,7 +61,7 @@ namespace BookStore
         {
             string maKH = txtMaKH.Text;
             string tenKH = txtTenKH.Text;
-            string sdt = txtSDT.Text;   
+            string sdt = txtSDT.Text;
 
             int result = KhachHangBUS.Instance.themKhachHang(maKH, tenKH, sdt);
             if (result == 1)
@@ -97,6 +96,38 @@ namespace BookStore
             }
         }
 
-        
+        private void dtgvSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Kiểm tra người dùng đã nhấp vào một dòng hợp lệ hay không
+            {
+                DataGridViewRow row = dtgvSach.Rows[e.RowIndex];
+
+                // Lấy giá trị từ các ô trong dòng được chọn
+                string maSach = row.Cells["Mã Sách"].Value.ToString();
+                int donGia = Convert.ToInt32(row.Cells["Đơn Giá"].Value);
+
+                txtMaSach.Text = maSach;
+                txtDonGiaSach.Text = donGia.ToString();
+
+            }
+        }
+
+        private void btnThemHD_Click(object sender, EventArgs e)
+        {
+            string maHD = txtMaHD.Text;
+            string maKH = txtMaKHinHD.Text; 
+            string maNV = txtMaNV.Text;
+
+            int result = HoaDonBUS.Instance.themHoaDon(maHD, maKH, maNV);
+            if (result == 1)
+            {
+                MessageBox.Show("Thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thất bại");
+            }
+
+        }
     }
 }
