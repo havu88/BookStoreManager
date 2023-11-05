@@ -70,6 +70,18 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCaLamViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaLamViec.Designer.cs">
+      <DependentUpon>FrmCaLamViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoanhThu.Designer.cs">
+      <DependentUpon>FrmDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,18 @@
     </Compile>
     <Compile Include="FrmHome.Designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaiKhoan.Designer.cs">
+      <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

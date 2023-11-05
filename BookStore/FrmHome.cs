@@ -19,6 +19,8 @@ namespace BookStore
         {
             InitializeComponent();
             loadData();
+            this.ControlBox = false; // Vô hiệu hóa ControlBox
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow; // Đặt FormBorderStyle thành FixedToolWindow
         }
 
         private void loadData()
@@ -189,6 +191,8 @@ namespace BookStore
 
             if (table != null)
             {
+                this.Hide();
+
                 FrmHoaDon frmHoaDon = new FrmHoaDon(table);  
                 frmHoaDon.ShowDialog();
             }
@@ -199,5 +203,31 @@ namespace BookStore
             FrmHome home = new FrmHome();
             home.ShowDialog();
         }
+
+        private void dtgvSach_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        private void dtgvSPK_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            e.Cancel=true;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmDangNhap dangNhap = new FrmDangNhap();
+            dangNhap.Show();
+        }
+
+        private void btnQuanLy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmQuanLy frmQuanLy = new FrmQuanLy();  
+            frmQuanLy.ShowDialog();
+        }
+
+       
     }
 }

@@ -17,16 +17,19 @@ namespace BookStore
         public FrmDangNhap()
         {
             InitializeComponent();
+            this.ControlBox = false; // Vô hiệu hóa ControlBox
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow; // Đặt FormBorderStyle thành FixedToolWindow
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string taiKhoan = txtTaiKhoan.Text;
             string matKhau = txtMatKhau.Text;
-            /*DBSQLServerUtils con = new DBSQLServerUtils(taiKhoan, matKhau);*/
+           
             TaiKhoan taikhoan = TaiKhoanBUS.Instance.xuLyDangNhap(taiKhoan, matKhau);
             if (taikhoan != null)
             {
+                this.Hide();
 
                 FrmHome home = new FrmHome();  
                 home.ShowDialog();  
@@ -38,6 +41,12 @@ namespace BookStore
                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
             }
                 
+        }
+
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
         }
     }
 }

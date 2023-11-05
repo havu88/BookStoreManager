@@ -17,6 +17,8 @@ namespace BookStore
         {
             InitializeComponent();
             loadHoaDon(table);
+            this.ControlBox = false; // Vô hiệu hóa ControlBox
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow; // Đặt FormBorderStyle thành FixedToolWindow
         }
 
         public void loadHoaDon(DataTable table)
