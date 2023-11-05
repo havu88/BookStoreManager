@@ -28,6 +28,11 @@ namespace BookStore
             lbTriGiaHD.Text = table.Rows[0][4].ToString();
         }
 
-        
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmHome home = new FrmHome();   
+            home.Show();
+        }
     }
 }

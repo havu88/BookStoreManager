@@ -143,6 +143,7 @@ namespace BookStore
             {
                 MessageBox.Show("Thất bại");
             }
+            loadData();
         }
 
         private void dtgvSPK_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -177,6 +178,7 @@ namespace BookStore
             {
                 MessageBox.Show("Thất bại");
             }
+            loadData();
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
@@ -190,6 +192,12 @@ namespace BookStore
                 FrmHoaDon frmHoaDon = new FrmHoaDon(table);  
                 frmHoaDon.ShowDialog();
             }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FrmHome home = new FrmHome();
+            home.ShowDialog();
         }
     }
 }

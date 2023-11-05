@@ -67,6 +67,11 @@
             this.label17 = new System.Windows.Forms.Label();
             this.btnThemSPinHD = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnNhanVien = new System.Windows.Forms.Button();
+            this.btnDoanhThu = new System.Windows.Forms.Button();
+            this.btnCaLamViec = new System.Windows.Forms.Button();
+            this.btnTaiKhoan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSPK)).BeginInit();
             this.SuspendLayout();
@@ -409,11 +414,62 @@
             this.btnThanhToan.UseVisualStyleBackColor = true;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(12, 12);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(75, 23);
+            this.btnHome.TabIndex = 39;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Location = new System.Drawing.Point(162, 12);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(92, 23);
+            this.btnNhanVien.TabIndex = 40;
+            this.btnNhanVien.Text = "Nhân Viên";
+            this.btnNhanVien.UseVisualStyleBackColor = true;
+            // 
+            // btnDoanhThu
+            // 
+            this.btnDoanhThu.Location = new System.Drawing.Point(337, 12);
+            this.btnDoanhThu.Name = "btnDoanhThu";
+            this.btnDoanhThu.Size = new System.Drawing.Size(92, 23);
+            this.btnDoanhThu.TabIndex = 41;
+            this.btnDoanhThu.Text = "Doanh Thu";
+            this.btnDoanhThu.UseVisualStyleBackColor = true;
+            // 
+            // btnCaLamViec
+            // 
+            this.btnCaLamViec.Location = new System.Drawing.Point(513, 12);
+            this.btnCaLamViec.Name = "btnCaLamViec";
+            this.btnCaLamViec.Size = new System.Drawing.Size(95, 23);
+            this.btnCaLamViec.TabIndex = 42;
+            this.btnCaLamViec.Text = "Ca Làm Việc";
+            this.btnCaLamViec.UseVisualStyleBackColor = true;
+            // 
+            // btnTaiKhoan
+            // 
+            this.btnTaiKhoan.Location = new System.Drawing.Point(690, 12);
+            this.btnTaiKhoan.Name = "btnTaiKhoan";
+            this.btnTaiKhoan.Size = new System.Drawing.Size(95, 23);
+            this.btnTaiKhoan.TabIndex = 43;
+            this.btnTaiKhoan.Text = "Tài Khoản";
+            this.btnTaiKhoan.UseVisualStyleBackColor = true;
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1287, 807);
+            this.Controls.Add(this.btnTaiKhoan);
+            this.Controls.Add(this.btnCaLamViec);
+            this.Controls.Add(this.btnDoanhThu);
+            this.Controls.Add(this.btnNhanVien);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.btnThemSPinHD);
             this.Controls.Add(this.label17);
@@ -504,5 +560,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnThemSPinHD;
         private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnNhanVien;
+        private System.Windows.Forms.Button btnDoanhThu;
+        private System.Windows.Forms.Button btnCaLamViec;
+        private System.Windows.Forms.Button btnTaiKhoan;
     }
 }
