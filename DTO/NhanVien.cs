@@ -17,14 +17,13 @@ namespace DTO
         private string sdt;
         private string diaChi;
         private int soCa;
-        private float thuong;
         private string maCV;
 
         public NhanVien()
         {
         }
 
-        public NhanVien(string maNV, string tenTK, string hoNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, int soCa, float thuong, string maCV)
+        public NhanVien(string maNV, string tenTK, string hoNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, int soCa, string maCV)
         {
             this.maNV = maNV;
             this.tenTK = tenTK;
@@ -35,7 +34,6 @@ namespace DTO
             this.sdt = sdt;
             this.diaChi = diaChi;
             this.soCa = soCa;
-            this.thuong = thuong;
             this.maCV = maCV;
         }
 
@@ -93,11 +91,6 @@ namespace DTO
             set { soCa = value; }
         }
 
-        public float Thuong
-        {
-            get { return thuong; }
-            set { thuong = value; }
-        }
         public string MaCV
         {
             get { return maCV; }
