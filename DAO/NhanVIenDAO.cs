@@ -41,5 +41,22 @@ namespace DAO
             string sqlSrt = string.Format("SELECT * FROM func_tinhLuongNV()");
             return dbConn.LayDanhSach(sqlSrt);
         }
+        public DataTable Search(string timKiem, string value)
+        {
+            string sqlStr = "";
+            if(timKiem=="MaNV")
+            {
+                sqlStr = string.Format("pro_SearchByMaNV N'{0}'",value);
+            }
+            if (timKiem == "TenNV")
+            {
+                sqlStr = string.Format("pro_SearchByTenNV N'{0}'", value);
+            }
+            if (timKiem == "SDT")
+            {
+               sqlStr = string.Format("pro_SearchBySDT N'{0}'", value);
+            }
+            return dbConn.LayDanhSach(sqlStr);
+        }
     }
 }

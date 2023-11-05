@@ -224,7 +224,7 @@ namespace BookStore
         private void btnQuanLy_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmQuanLy frmQuanLy = new FrmQuanLy();  
+            FrmNhanVien frmQuanLy = new FrmNhanVien();  
             frmQuanLy.ShowDialog();
         }
 

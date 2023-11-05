@@ -39,6 +39,7 @@
             this.dgv_BangLuong.Name = "dgv_BangLuong";
             this.dgv_BangLuong.Size = new System.Drawing.Size(804, 458);
             this.dgv_BangLuong.TabIndex = 2;
+            this.dgv_BangLuong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_BangLuong_CellContentClick);
             // 
             // FrmBangLuong
             // 
@@ -48,6 +49,7 @@
             this.Controls.Add(this.dgv_BangLuong);
             this.Name = "FrmBangLuong";
             this.Text = "FrmBangLuong";
+            this.Load += new System.EventHandler(this.FrmBangLuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_BangLuong)).EndInit();
             this.ResumeLayout(false);
 

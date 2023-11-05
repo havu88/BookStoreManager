@@ -24,3 +24,16 @@ D:\HK1_2023\DBMS\BookStore\BookStore\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.
 D:\HK1_2023\DBMS\BookStore\BookStore\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\HK1_2023\DBMS\BookStore\BookStore\BUS\obj\Debug\BUS.dll
 D:\HK1_2023\DBMS\BookStore\BookStore\BUS\obj\Debug\BUS.pdb
+C:\GitHub\BookStoreManager\BUS\bin\Debug\BUS.dll
+C:\GitHub\BookStoreManager\BUS\bin\Debug\BUS.pdb
+C:\GitHub\BookStoreManager\BUS\bin\Debug\DAO.dll
+C:\GitHub\BookStoreManager\BUS\bin\Debug\DTO.dll
+C:\GitHub\BookStoreManager\BUS\bin\Debug\System.Data.SqlClient.dll
+C:\GitHub\BookStoreManager\BUS\bin\Debug\DAO.pdb
+C:\GitHub\BookStoreManager\BUS\bin\Debug\DTO.pdb
+C:\GitHub\BookStoreManager\BUS\bin\Debug\System.Data.SqlClient.xml
+C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.dll
+C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.pdb

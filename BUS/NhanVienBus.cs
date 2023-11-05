@@ -32,5 +32,9 @@ namespace BUS
         {
             return nvDao.XemLuong();
         }
+        public DataTable Search(string timKiem, string value)
+        {
+            return nvDao.Search(timKiem,value);
+        }
     }
 }

@@ -20,3 +20,14 @@ D:\HK1_2023\DBMS\BookStore\BookStore\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.
 D:\HK1_2023\DBMS\BookStore\BookStore\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\HK1_2023\DBMS\BookStore\BookStore\DAO\obj\Debug\DAO.dll
 D:\HK1_2023\DBMS\BookStore\BookStore\DAO\obj\Debug\DAO.pdb
+C:\GitHub\BookStoreManager\DAO\bin\Debug\DAO.dll
+C:\GitHub\BookStoreManager\DAO\bin\Debug\DAO.pdb
+C:\GitHub\BookStoreManager\DAO\bin\Debug\DTO.dll
+C:\GitHub\BookStoreManager\DAO\bin\Debug\System.Data.SqlClient.dll
+C:\GitHub\BookStoreManager\DAO\bin\Debug\DTO.pdb
+C:\GitHub\BookStoreManager\DAO\bin\Debug\System.Data.SqlClient.xml
+C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.dll
+C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.pdb
