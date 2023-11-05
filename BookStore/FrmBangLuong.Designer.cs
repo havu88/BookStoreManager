@@ -35,7 +35,7 @@
             // dgv_BangLuong
             // 
             this.dgv_BangLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_BangLuong.Location = new System.Drawing.Point(-2, -4);
+            this.dgv_BangLuong.Location = new System.Drawing.Point(-2, -3);
             this.dgv_BangLuong.Name = "dgv_BangLuong";
             this.dgv_BangLuong.Size = new System.Drawing.Size(804, 458);
             this.dgv_BangLuong.TabIndex = 2;

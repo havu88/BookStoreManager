@@ -146,5 +146,10 @@ namespace BookStore
             if (cbo_Loai.Text == "SDT") timkiem = "SDT";
             dgv_DSNV.DataSource = nvBus.Search(timkiem, txt_TimKiem.Text);
         }
+
+        private void dgv_BangLuong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

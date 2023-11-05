@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tc_QLNV = new System.Windows.Forms.TabControl();
             this.tp_QLNV = new System.Windows.Forms.TabPage();
+            this.cbo_Loai = new System.Windows.Forms.ComboBox();
             this.btn_Luong = new System.Windows.Forms.Button();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
@@ -61,22 +62,40 @@
             this.lbl_MaNV = new System.Windows.Forms.Label();
             this.lbl_ThongTinSP = new System.Windows.Forms.Label();
             this.lbl_QLSanPham = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cbo_Loai = new System.Windows.Forms.ComboBox();
-            this.tabControl1.SuspendLayout();
+            this.tp_QLPhanCa = new System.Windows.Forms.TabPage();
+            this.lbl_QLPhanCa = new System.Windows.Forms.Label();
+            this.dtp_NgayLam = new System.Windows.Forms.DateTimePicker();
+            this.txt_MaNV_PC = new System.Windows.Forms.TextBox();
+            this.txt_MaCa = new System.Windows.Forms.TextBox();
+            this.lbl_NgayLam = new System.Windows.Forms.Label();
+            this.lbl_MaNV_PC = new System.Windows.Forms.Label();
+            this.lbl_MaCa = new System.Windows.Forms.Label();
+            this.lbl_ThongTinPhanCa = new System.Windows.Forms.Label();
+            this.cbo_LoaiTimKiem = new System.Windows.Forms.ComboBox();
+            this.txt_TimKiemPhanCa = new System.Windows.Forms.TextBox();
+            this.btn_ThoatCa = new System.Windows.Forms.Button();
+            this.btn_XoaCa = new System.Windows.Forms.Button();
+            this.btn_SuaCa = new System.Windows.Forms.Button();
+            this.btb_ThemCa = new System.Windows.Forms.Button();
+            this.btn_TimKiemPhanCa = new System.Windows.Forms.Button();
+            this.dgv_DSPC = new System.Windows.Forms.DataGridView();
+            this.lbl_DSPhanCa = new System.Windows.Forms.Label();
+            this.tc_QLNV.SuspendLayout();
             this.tp_QLNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSNV)).BeginInit();
+            this.tp_QLPhanCa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSPC)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tc_QLNV
             // 
-            this.tabControl1.Controls.Add(this.tp_QLNV);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-2, 1);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(804, 451);
-            this.tabControl1.TabIndex = 93;
+            this.tc_QLNV.Controls.Add(this.tp_QLNV);
+            this.tc_QLNV.Controls.Add(this.tp_QLPhanCa);
+            this.tc_QLNV.Location = new System.Drawing.Point(-2, 1);
+            this.tc_QLNV.Name = "tc_QLNV";
+            this.tc_QLNV.SelectedIndex = 0;
+            this.tc_QLNV.Size = new System.Drawing.Size(804, 451);
+            this.tc_QLNV.TabIndex = 93;
             // 
             // tp_QLNV
             // 
@@ -121,6 +140,19 @@
             this.tp_QLNV.Text = "Quản lí nhân viên";
             this.tp_QLNV.UseVisualStyleBackColor = true;
             this.tp_QLNV.Click += new System.EventHandler(this.tp_QLNV_Click);
+            // 
+            // cbo_Loai
+            // 
+            this.cbo_Loai.FormattingEnabled = true;
+            this.cbo_Loai.Items.AddRange(new object[] {
+            "Mã NV",
+            "Tên",
+            "SDT"});
+            this.cbo_Loai.Location = new System.Drawing.Point(210, 235);
+            this.cbo_Loai.Name = "cbo_Loai";
+            this.cbo_Loai.Size = new System.Drawing.Size(66, 24);
+            this.cbo_Loai.TabIndex = 124;
+            this.cbo_Loai.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btn_Luong
             // 
@@ -407,49 +439,216 @@
             this.lbl_QLSanPham.Text = "Quản lí nhân viên";
             this.lbl_QLSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabPage2
+            // tp_QLPhanCa
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(796, 425);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tp_QLPhanCa.Controls.Add(this.cbo_LoaiTimKiem);
+            this.tp_QLPhanCa.Controls.Add(this.txt_TimKiemPhanCa);
+            this.tp_QLPhanCa.Controls.Add(this.btn_ThoatCa);
+            this.tp_QLPhanCa.Controls.Add(this.btn_XoaCa);
+            this.tp_QLPhanCa.Controls.Add(this.btn_SuaCa);
+            this.tp_QLPhanCa.Controls.Add(this.btb_ThemCa);
+            this.tp_QLPhanCa.Controls.Add(this.btn_TimKiemPhanCa);
+            this.tp_QLPhanCa.Controls.Add(this.dgv_DSPC);
+            this.tp_QLPhanCa.Controls.Add(this.lbl_DSPhanCa);
+            this.tp_QLPhanCa.Controls.Add(this.dtp_NgayLam);
+            this.tp_QLPhanCa.Controls.Add(this.txt_MaNV_PC);
+            this.tp_QLPhanCa.Controls.Add(this.txt_MaCa);
+            this.tp_QLPhanCa.Controls.Add(this.lbl_NgayLam);
+            this.tp_QLPhanCa.Controls.Add(this.lbl_MaNV_PC);
+            this.tp_QLPhanCa.Controls.Add(this.lbl_MaCa);
+            this.tp_QLPhanCa.Controls.Add(this.lbl_ThongTinPhanCa);
+            this.tp_QLPhanCa.Controls.Add(this.lbl_QLPhanCa);
+            this.tp_QLPhanCa.Location = new System.Drawing.Point(4, 22);
+            this.tp_QLPhanCa.Name = "tp_QLPhanCa";
+            this.tp_QLPhanCa.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_QLPhanCa.Size = new System.Drawing.Size(796, 425);
+            this.tp_QLPhanCa.TabIndex = 1;
+            this.tp_QLPhanCa.Text = "Quản lí phân ca";
+            this.tp_QLPhanCa.UseVisualStyleBackColor = true;
             // 
-            // cbo_Loai
+            // lbl_QLPhanCa
             // 
-            this.cbo_Loai.FormattingEnabled = true;
-            this.cbo_Loai.Items.AddRange(new object[] {
-            "Mã NV",
-            "Tên",
-            "SDT"});
-            this.cbo_Loai.Location = new System.Drawing.Point(210, 235);
-            this.cbo_Loai.Name = "cbo_Loai";
-            this.cbo_Loai.Size = new System.Drawing.Size(66, 24);
-            this.cbo_Loai.TabIndex = 124;
-            this.cbo_Loai.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.lbl_QLPhanCa.AutoSize = true;
+            this.lbl_QLPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_QLPhanCa.Location = new System.Drawing.Point(306, 19);
+            this.lbl_QLPhanCa.Name = "lbl_QLPhanCa";
+            this.lbl_QLPhanCa.Size = new System.Drawing.Size(179, 29);
+            this.lbl_QLPhanCa.TabIndex = 126;
+            this.lbl_QLPhanCa.Text = "Quản lí phân ca";
+            this.lbl_QLPhanCa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtp_NgayLam
+            // 
+            this.dtp_NgayLam.Location = new System.Drawing.Point(298, 162);
+            this.dtp_NgayLam.Name = "dtp_NgayLam";
+            this.dtp_NgayLam.Size = new System.Drawing.Size(185, 20);
+            this.dtp_NgayLam.TabIndex = 161;
+            // 
+            // txt_MaNV_PC
+            // 
+            this.txt_MaNV_PC.Location = new System.Drawing.Point(298, 127);
+            this.txt_MaNV_PC.Name = "txt_MaNV_PC";
+            this.txt_MaNV_PC.Size = new System.Drawing.Size(185, 20);
+            this.txt_MaNV_PC.TabIndex = 160;
+            // 
+            // txt_MaCa
+            // 
+            this.txt_MaCa.Location = new System.Drawing.Point(298, 98);
+            this.txt_MaCa.Name = "txt_MaCa";
+            this.txt_MaCa.Size = new System.Drawing.Size(185, 20);
+            this.txt_MaCa.TabIndex = 159;
+            // 
+            // lbl_NgayLam
+            // 
+            this.lbl_NgayLam.AutoSize = true;
+            this.lbl_NgayLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayLam.Location = new System.Drawing.Point(182, 162);
+            this.lbl_NgayLam.Name = "lbl_NgayLam";
+            this.lbl_NgayLam.Size = new System.Drawing.Size(67, 17);
+            this.lbl_NgayLam.TabIndex = 158;
+            this.lbl_NgayLam.Text = "Ngày làm";
+            // 
+            // lbl_MaNV_PC
+            // 
+            this.lbl_MaNV_PC.AutoSize = true;
+            this.lbl_MaNV_PC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MaNV_PC.Location = new System.Drawing.Point(182, 127);
+            this.lbl_MaNV_PC.Name = "lbl_MaNV_PC";
+            this.lbl_MaNV_PC.Size = new System.Drawing.Size(93, 17);
+            this.lbl_MaNV_PC.TabIndex = 157;
+            this.lbl_MaNV_PC.Text = "Mã nhân viên";
+            this.lbl_MaNV_PC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_MaCa
+            // 
+            this.lbl_MaCa.AutoSize = true;
+            this.lbl_MaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MaCa.Location = new System.Drawing.Point(182, 98);
+            this.lbl_MaCa.Name = "lbl_MaCa";
+            this.lbl_MaCa.Size = new System.Drawing.Size(46, 17);
+            this.lbl_MaCa.TabIndex = 156;
+            this.lbl_MaCa.Text = "Mã ca";
+            // 
+            // lbl_ThongTinPhanCa
+            // 
+            this.lbl_ThongTinPhanCa.AutoSize = true;
+            this.lbl_ThongTinPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ThongTinPhanCa.Location = new System.Drawing.Point(158, 63);
+            this.lbl_ThongTinPhanCa.Name = "lbl_ThongTinPhanCa";
+            this.lbl_ThongTinPhanCa.Size = new System.Drawing.Size(176, 20);
+            this.lbl_ThongTinPhanCa.TabIndex = 155;
+            this.lbl_ThongTinPhanCa.Text = "Thông tin bảng phân ca";
+            // 
+            // cbo_LoaiTimKiem
+            // 
+            this.cbo_LoaiTimKiem.FormattingEnabled = true;
+            this.cbo_LoaiTimKiem.Items.AddRange(new object[] {
+            "Mã Ca",
+            "Mã NV"});
+            this.cbo_LoaiTimKiem.Location = new System.Drawing.Point(690, 97);
+            this.cbo_LoaiTimKiem.Name = "cbo_LoaiTimKiem";
+            this.cbo_LoaiTimKiem.Size = new System.Drawing.Size(66, 21);
+            this.cbo_LoaiTimKiem.TabIndex = 170;
+            // 
+            // txt_TimKiemPhanCa
+            // 
+            this.txt_TimKiemPhanCa.Location = new System.Drawing.Point(584, 98);
+            this.txt_TimKiemPhanCa.Name = "txt_TimKiemPhanCa";
+            this.txt_TimKiemPhanCa.Size = new System.Drawing.Size(100, 20);
+            this.txt_TimKiemPhanCa.TabIndex = 169;
+            // 
+            // btn_ThoatCa
+            // 
+            this.btn_ThoatCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThoatCa.Location = new System.Drawing.Point(554, 215);
+            this.btn_ThoatCa.Name = "btn_ThoatCa";
+            this.btn_ThoatCa.Size = new System.Drawing.Size(75, 23);
+            this.btn_ThoatCa.TabIndex = 168;
+            this.btn_ThoatCa.Text = "Thoát";
+            this.btn_ThoatCa.UseVisualStyleBackColor = true;
+            // 
+            // btn_XoaCa
+            // 
+            this.btn_XoaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaCa.Location = new System.Drawing.Point(422, 215);
+            this.btn_XoaCa.Name = "btn_XoaCa";
+            this.btn_XoaCa.Size = new System.Drawing.Size(75, 23);
+            this.btn_XoaCa.TabIndex = 167;
+            this.btn_XoaCa.Text = "Xóa";
+            this.btn_XoaCa.UseVisualStyleBackColor = true;
+            // 
+            // btn_SuaCa
+            // 
+            this.btn_SuaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaCa.Location = new System.Drawing.Point(298, 215);
+            this.btn_SuaCa.Name = "btn_SuaCa";
+            this.btn_SuaCa.Size = new System.Drawing.Size(75, 23);
+            this.btn_SuaCa.TabIndex = 166;
+            this.btn_SuaCa.Text = "Sửa";
+            this.btn_SuaCa.UseVisualStyleBackColor = true;
+            // 
+            // btb_ThemCa
+            // 
+            this.btb_ThemCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btb_ThemCa.Location = new System.Drawing.Point(185, 215);
+            this.btb_ThemCa.Name = "btb_ThemCa";
+            this.btb_ThemCa.Size = new System.Drawing.Size(75, 23);
+            this.btb_ThemCa.TabIndex = 165;
+            this.btb_ThemCa.Text = "Thêm";
+            this.btb_ThemCa.UseVisualStyleBackColor = true;
+            // 
+            // btn_TimKiemPhanCa
+            // 
+            this.btn_TimKiemPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiemPhanCa.Location = new System.Drawing.Point(503, 98);
+            this.btn_TimKiemPhanCa.Name = "btn_TimKiemPhanCa";
+            this.btn_TimKiemPhanCa.Size = new System.Drawing.Size(75, 23);
+            this.btn_TimKiemPhanCa.TabIndex = 164;
+            this.btn_TimKiemPhanCa.Text = "Tìm kiếm";
+            this.btn_TimKiemPhanCa.UseMnemonic = false;
+            this.btn_TimKiemPhanCa.UseVisualStyleBackColor = true;
+            // 
+            // dgv_DSPC
+            // 
+            this.dgv_DSPC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DSPC.Location = new System.Drawing.Point(34, 282);
+            this.dgv_DSPC.Name = "dgv_DSPC";
+            this.dgv_DSPC.Size = new System.Drawing.Size(665, 112);
+            this.dgv_DSPC.TabIndex = 163;
+            // 
+            // lbl_DSPhanCa
+            // 
+            this.lbl_DSPhanCa.AutoSize = true;
+            this.lbl_DSPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DSPhanCa.Location = new System.Drawing.Point(30, 248);
+            this.lbl_DSPhanCa.Name = "lbl_DSPhanCa";
+            this.lbl_DSPhanCa.Size = new System.Drawing.Size(108, 20);
+            this.lbl_DSPhanCa.TabIndex = 162;
+            this.lbl_DSPhanCa.Text = "Bảng phân ca";
             // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tc_QLNV);
             this.Name = "FrmNhanVien";
             this.Text = "FrmNhanVien";
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tc_QLNV.ResumeLayout(false);
             this.tp_QLNV.ResumeLayout(false);
             this.tp_QLNV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSNV)).EndInit();
+            this.tp_QLPhanCa.ResumeLayout(false);
+            this.tp_QLPhanCa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSPC)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tc_QLNV;
         private System.Windows.Forms.TabPage tp_QLNV;
         private System.Windows.Forms.Button btn_Luong;
         private System.Windows.Forms.DateTimePicker dtp_NgaySinh;
@@ -482,7 +681,24 @@
         private System.Windows.Forms.Label lbl_MaNV;
         private System.Windows.Forms.Label lbl_ThongTinSP;
         private System.Windows.Forms.Label lbl_QLSanPham;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tp_QLPhanCa;
         private System.Windows.Forms.ComboBox cbo_Loai;
+        private System.Windows.Forms.Label lbl_QLPhanCa;
+        private System.Windows.Forms.DateTimePicker dtp_NgayLam;
+        private System.Windows.Forms.TextBox txt_MaNV_PC;
+        private System.Windows.Forms.TextBox txt_MaCa;
+        private System.Windows.Forms.Label lbl_NgayLam;
+        private System.Windows.Forms.Label lbl_MaNV_PC;
+        private System.Windows.Forms.Label lbl_MaCa;
+        private System.Windows.Forms.Label lbl_ThongTinPhanCa;
+        private System.Windows.Forms.ComboBox cbo_LoaiTimKiem;
+        private System.Windows.Forms.TextBox txt_TimKiemPhanCa;
+        private System.Windows.Forms.Button btn_ThoatCa;
+        private System.Windows.Forms.Button btn_XoaCa;
+        private System.Windows.Forms.Button btn_SuaCa;
+        private System.Windows.Forms.Button btb_ThemCa;
+        private System.Windows.Forms.Button btn_TimKiemPhanCa;
+        private System.Windows.Forms.DataGridView dgv_DSPC;
+        private System.Windows.Forms.Label lbl_DSPhanCa;
     }
 }
