@@ -100,11 +100,11 @@
     <Compile Include="FrmHome.Designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNhanVien.cs">
+    <Compile Include="FrmQuanLyNhaSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNhanVien.Designer.cs">
-      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    <Compile Include="FrmQuanLyNhaSach.Designer.cs">
+      <DependentUpon>FrmQuanLyNhaSach.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNhanVien.resx">
-      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="FrmQuanLyNhaSach.resx">
+      <DependentUpon>FrmQuanLyNhaSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

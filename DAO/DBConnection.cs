@@ -44,12 +44,12 @@ namespace DAO
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Thanh cong");
+                    MessageBox.Show("Thành công");
 
             }
             catch (Exception exc)
             {
-                MessageBox.Show("That bai " + exc);
+                MessageBox.Show("Thất bại  " + exc);
             }
             finally
             {

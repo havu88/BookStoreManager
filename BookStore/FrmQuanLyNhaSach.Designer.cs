@@ -1,6 +1,6 @@
 ﻿namespace BookStore
 {
-    partial class FrmNhanVien
+    partial class FrmQuanLyNhaSach
     {
         /// <summary>
         /// Required designer variable.
@@ -79,6 +79,7 @@
             this.lbl_MaCa = new System.Windows.Forms.Label();
             this.lbl_ThongTinPhanCa = new System.Windows.Forms.Label();
             this.lbl_QLPhanCa = new System.Windows.Forms.Label();
+            this.btn_SuaPhanCa = new System.Windows.Forms.Button();
             this.tc_QLNV.SuspendLayout();
             this.tp_QLNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSNV)).BeginInit();
@@ -151,7 +152,6 @@
             this.cbo_Loai.Name = "cbo_Loai";
             this.cbo_Loai.Size = new System.Drawing.Size(66, 24);
             this.cbo_Loai.TabIndex = 124;
-            this.cbo_Loai.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btn_Luong
             // 
@@ -440,6 +440,7 @@
             // 
             // tp_QLPhanCa
             // 
+            this.tp_QLPhanCa.Controls.Add(this.btn_SuaPhanCa);
             this.tp_QLPhanCa.Controls.Add(this.cbo_LoaiTimKiem);
             this.tp_QLPhanCa.Controls.Add(this.txt_TimKiemPhanCa);
             this.tp_QLPhanCa.Controls.Add(this.btn_ThoatCa);
@@ -466,36 +467,39 @@
             // 
             // cbo_LoaiTimKiem
             // 
+            this.cbo_LoaiTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_LoaiTimKiem.FormattingEnabled = true;
             this.cbo_LoaiTimKiem.Items.AddRange(new object[] {
             "Mã Ca",
             "Mã NV"});
-            this.cbo_LoaiTimKiem.Location = new System.Drawing.Point(690, 97);
+            this.cbo_LoaiTimKiem.Location = new System.Drawing.Point(300, 265);
             this.cbo_LoaiTimKiem.Name = "cbo_LoaiTimKiem";
-            this.cbo_LoaiTimKiem.Size = new System.Drawing.Size(66, 21);
+            this.cbo_LoaiTimKiem.Size = new System.Drawing.Size(66, 24);
             this.cbo_LoaiTimKiem.TabIndex = 170;
             // 
             // txt_TimKiemPhanCa
             // 
-            this.txt_TimKiemPhanCa.Location = new System.Drawing.Point(584, 98);
+            this.txt_TimKiemPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimKiemPhanCa.Location = new System.Drawing.Point(181, 267);
             this.txt_TimKiemPhanCa.Name = "txt_TimKiemPhanCa";
-            this.txt_TimKiemPhanCa.Size = new System.Drawing.Size(100, 20);
+            this.txt_TimKiemPhanCa.Size = new System.Drawing.Size(110, 22);
             this.txt_TimKiemPhanCa.TabIndex = 169;
             // 
             // btn_ThoatCa
             // 
             this.btn_ThoatCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThoatCa.Location = new System.Drawing.Point(410, 215);
+            this.btn_ThoatCa.Location = new System.Drawing.Point(416, 265);
             this.btn_ThoatCa.Name = "btn_ThoatCa";
             this.btn_ThoatCa.Size = new System.Drawing.Size(75, 23);
             this.btn_ThoatCa.TabIndex = 168;
             this.btn_ThoatCa.Text = "Thoát";
             this.btn_ThoatCa.UseVisualStyleBackColor = true;
+            this.btn_ThoatCa.Click += new System.EventHandler(this.btn_ThoatCa_Click);
             // 
             // btn_XoaCa
             // 
             this.btn_XoaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XoaCa.Location = new System.Drawing.Point(298, 215);
+            this.btn_XoaCa.Location = new System.Drawing.Point(185, 215);
             this.btn_XoaCa.Name = "btn_XoaCa";
             this.btn_XoaCa.Size = new System.Drawing.Size(75, 23);
             this.btn_XoaCa.TabIndex = 167;
@@ -506,7 +510,7 @@
             // btb_ThemCa
             // 
             this.btb_ThemCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btb_ThemCa.Location = new System.Drawing.Point(185, 215);
+            this.btb_ThemCa.Location = new System.Drawing.Point(88, 215);
             this.btb_ThemCa.Name = "btb_ThemCa";
             this.btb_ThemCa.Size = new System.Drawing.Size(75, 23);
             this.btb_ThemCa.TabIndex = 165;
@@ -517,7 +521,7 @@
             // btn_TimKiemPhanCa
             // 
             this.btn_TimKiemPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiemPhanCa.Location = new System.Drawing.Point(503, 98);
+            this.btn_TimKiemPhanCa.Location = new System.Drawing.Point(88, 266);
             this.btn_TimKiemPhanCa.Name = "btn_TimKiemPhanCa";
             this.btn_TimKiemPhanCa.Size = new System.Drawing.Size(75, 23);
             this.btn_TimKiemPhanCa.TabIndex = 164;
@@ -529,9 +533,9 @@
             // dgv_DSPC
             // 
             this.dgv_DSPC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_DSPC.Location = new System.Drawing.Point(34, 282);
+            this.dgv_DSPC.Location = new System.Drawing.Point(416, 98);
             this.dgv_DSPC.Name = "dgv_DSPC";
-            this.dgv_DSPC.Size = new System.Drawing.Size(665, 112);
+            this.dgv_DSPC.Size = new System.Drawing.Size(370, 140);
             this.dgv_DSPC.TabIndex = 163;
             this.dgv_DSPC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DSPC_CellContentClick);
             // 
@@ -539,7 +543,7 @@
             // 
             this.lbl_DSPhanCa.AutoSize = true;
             this.lbl_DSPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DSPhanCa.Location = new System.Drawing.Point(30, 248);
+            this.lbl_DSPhanCa.Location = new System.Drawing.Point(412, 63);
             this.lbl_DSPhanCa.Name = "lbl_DSPhanCa";
             this.lbl_DSPhanCa.Size = new System.Drawing.Size(108, 20);
             this.lbl_DSPhanCa.TabIndex = 162;
@@ -547,21 +551,21 @@
             // 
             // dtp_NgayLam
             // 
-            this.dtp_NgayLam.Location = new System.Drawing.Point(298, 162);
+            this.dtp_NgayLam.Location = new System.Drawing.Point(181, 162);
             this.dtp_NgayLam.Name = "dtp_NgayLam";
             this.dtp_NgayLam.Size = new System.Drawing.Size(185, 20);
             this.dtp_NgayLam.TabIndex = 161;
             // 
             // txt_MaNV_PC
             // 
-            this.txt_MaNV_PC.Location = new System.Drawing.Point(298, 127);
+            this.txt_MaNV_PC.Location = new System.Drawing.Point(181, 130);
             this.txt_MaNV_PC.Name = "txt_MaNV_PC";
             this.txt_MaNV_PC.Size = new System.Drawing.Size(185, 20);
             this.txt_MaNV_PC.TabIndex = 160;
             // 
             // txt_MaCa
             // 
-            this.txt_MaCa.Location = new System.Drawing.Point(298, 98);
+            this.txt_MaCa.Location = new System.Drawing.Point(181, 98);
             this.txt_MaCa.Name = "txt_MaCa";
             this.txt_MaCa.Size = new System.Drawing.Size(185, 20);
             this.txt_MaCa.TabIndex = 159;
@@ -570,7 +574,7 @@
             // 
             this.lbl_NgayLam.AutoSize = true;
             this.lbl_NgayLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NgayLam.Location = new System.Drawing.Point(182, 162);
+            this.lbl_NgayLam.Location = new System.Drawing.Point(85, 162);
             this.lbl_NgayLam.Name = "lbl_NgayLam";
             this.lbl_NgayLam.Size = new System.Drawing.Size(67, 17);
             this.lbl_NgayLam.TabIndex = 158;
@@ -580,7 +584,7 @@
             // 
             this.lbl_MaNV_PC.AutoSize = true;
             this.lbl_MaNV_PC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MaNV_PC.Location = new System.Drawing.Point(182, 127);
+            this.lbl_MaNV_PC.Location = new System.Drawing.Point(85, 130);
             this.lbl_MaNV_PC.Name = "lbl_MaNV_PC";
             this.lbl_MaNV_PC.Size = new System.Drawing.Size(93, 17);
             this.lbl_MaNV_PC.TabIndex = 157;
@@ -591,7 +595,7 @@
             // 
             this.lbl_MaCa.AutoSize = true;
             this.lbl_MaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MaCa.Location = new System.Drawing.Point(182, 98);
+            this.lbl_MaCa.Location = new System.Drawing.Point(85, 98);
             this.lbl_MaCa.Name = "lbl_MaCa";
             this.lbl_MaCa.Size = new System.Drawing.Size(46, 17);
             this.lbl_MaCa.TabIndex = 156;
@@ -601,7 +605,7 @@
             // 
             this.lbl_ThongTinPhanCa.AutoSize = true;
             this.lbl_ThongTinPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ThongTinPhanCa.Location = new System.Drawing.Point(158, 63);
+            this.lbl_ThongTinPhanCa.Location = new System.Drawing.Point(84, 63);
             this.lbl_ThongTinPhanCa.Name = "lbl_ThongTinPhanCa";
             this.lbl_ThongTinPhanCa.Size = new System.Drawing.Size(176, 20);
             this.lbl_ThongTinPhanCa.TabIndex = 155;
@@ -618,13 +622,24 @@
             this.lbl_QLPhanCa.Text = "Quản lí phân ca";
             this.lbl_QLPhanCa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FrmNhanVien
+            // btn_SuaPhanCa
+            // 
+            this.btn_SuaPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaPhanCa.Location = new System.Drawing.Point(291, 215);
+            this.btn_SuaPhanCa.Name = "btn_SuaPhanCa";
+            this.btn_SuaPhanCa.Size = new System.Drawing.Size(75, 23);
+            this.btn_SuaPhanCa.TabIndex = 171;
+            this.btn_SuaPhanCa.Text = "Sửa";
+            this.btn_SuaPhanCa.UseVisualStyleBackColor = true;
+            this.btn_SuaPhanCa.Click += new System.EventHandler(this.btn_SuaPhanCa_Click);
+            // 
+            // FrmQuanLyNhaSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tc_QLNV);
-            this.Name = "FrmNhanVien";
+            this.Name = "FrmQuanLyNhaSach";
             this.Text = "FrmNhanVien";
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             this.tc_QLNV.ResumeLayout(false);
@@ -691,5 +706,6 @@
         private System.Windows.Forms.Button btn_TimKiemPhanCa;
         private System.Windows.Forms.DataGridView dgv_DSPC;
         private System.Windows.Forms.Label lbl_DSPhanCa;
+        private System.Windows.Forms.Button btn_SuaPhanCa;
     }
 }

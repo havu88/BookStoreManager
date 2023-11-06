@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAO
 {
@@ -34,6 +35,11 @@ namespace DAO
         {
             string sqlStr = string.Format("select * from BangPhanCa where " + timKiem + " like N'%" + value + "%'");
             return dbConn.LayDanhSach(sqlStr);
+        }
+        public void Sua(string MaCaSua, string MaNVSua, BangPhanCa pc)
+        {
+            string sqlStr = string.Format("proc_SuaPhanCa N'{0}', N'{1}', N'{2}', N'{3}', N'{4}'", MaCaSua, MaNVSua, pc.MaCa, pc.MaNV, pc.NgayLam);
+            dbConn.Execute(sqlStr);
         }
     }
 }
