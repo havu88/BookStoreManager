@@ -15,6 +15,7 @@ namespace BookStore
     public partial class FrmNhanVien : Form
     {
         NhanVienBus nvBus = new NhanVienBus();
+        BangPhanCaBus pcBus= new BangPhanCaBus();
         public FrmNhanVien()
         {
             InitializeComponent();
@@ -22,6 +23,10 @@ namespace BookStore
         private void LoadDanhSach()
         {
             this.dgv_DSNV.DataSource = nvBus.LayDanhSachNhanVien();
+        }
+        private void LoadDanhSachPhanCa()
+        {
+            this.dgv_DSPC.DataSource = pcBus.LayDanhSachPhanCa();
         }
         private void btb_Them_Click(object sender, EventArgs e)
         {
@@ -126,6 +131,7 @@ namespace BookStore
         private void FrmNhanVien_Load(object sender, EventArgs e)
         {
             LoadDanhSach();
+            LoadDanhSachPhanCa();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -150,6 +156,41 @@ namespace BookStore
         private void dgv_BangLuong_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btb_ThemCa_Click(object sender, EventArgs e)
+        {
+            BangPhanCa pc= new BangPhanCa(txt_MaCa.Text,txt_MaNV_PC.Text,dtp_NgayLam.Value);
+            pcBus.ThemPhanCa(pc);
+            LoadDanhSachPhanCa();
+        }
+
+        private void btn_XoaCa_Click(object sender, EventArgs e)
+        {
+            BangPhanCa pc = new BangPhanCa(txt_MaCa.Text, txt_MaNV_PC.Text, dtp_NgayLam.Value);
+            pcBus.XoaPhanCa(pc);
+            LoadDanhSachPhanCa();
+        }
+
+        private void dgv_DSPC_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = dgv_DSPC.CurrentRow.Index;
+
+            txt_MaCa.Text = dgv_DSNV.Rows[i].Cells[0].Value.ToString();
+            txt_MaNV_PC.Text = dgv_DSNV.Rows[i].Cells[1].Value.ToString();
+        }
+
+        private void btn_TimKiemPhanCa_Click(object sender, EventArgs e)
+        {
+            if (txt_TimKiemPhanCa.Text == "")
+            {
+                dgv_DSPC.DataSource = pcBus.LayDanhSachPhanCa();
+                return;
+            }
+            string timkiem = "";
+            if (cbo_LoaiTimKiem.Text == "Mã Ca") timkiem = "MaCa";
+            if (cbo_LoaiTimKiem.Text == "Mã NV") timkiem = "MaNV";
+            dgv_DSPC.DataSource = pcBus.Search(timkiem, txt_TimKiemPhanCa.Text);
         }
     }
 }
