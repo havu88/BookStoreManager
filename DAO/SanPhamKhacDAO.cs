@@ -22,7 +22,8 @@ namespace DAO
             try
             {
                 List<SanPhamKhac> danhSachSanPhamKhac = new List<SanPhamKhac>();
-                string query = @"proc_DanhSachSanPhamKhac";
+                //string query = @"proc_DanhSachSanPhamKhac";
+                string query = "SELECT * FROM dbo.SanPhamKhac";
                 DataTable table = DataProvider.Instance.ExecuteQuery(query);
                 foreach (DataRow row in table.Rows)
                 {
@@ -36,6 +37,30 @@ namespace DAO
                 return null;
             }
 
+        }
+        public bool ThemSPK(string maSPK, string tenSP, float donGia, int tonKho)
+        {
+            string query = string.Format("EXEC [dbo].[proc_themSPKMoi] @MaSPK = {0}, @TenSPK = N'{1}',@DonGia = {2},@TonKho = {3}", maSPK, tenSP, donGia, tonKho);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool SuaSPK(string maSPK, string tenSP, float donGia, int tonKho)
+        {
+            string query = string.Format("EXEC [dbo].[proc_suaSPK] @MaSPK = {0}, @TenSPK = N'{1}',@DonGia = {2},@TonKho = {3}", maSPK, tenSP, donGia, tonKho);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool XoaSPK(string maSPK)
+        {
+
+            string query = string.Format("EXEC [dbo].[proc_xoaSPK] @MaSPK = {0}", maSPK);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
         }
     }
 }
