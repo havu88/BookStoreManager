@@ -45,7 +45,6 @@ C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.FrmDangNhap.resources
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.FrmBangLuong.resources
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.FrmHoaDon.resources
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.FrmHome.resources
-C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.FrmNhanVien.resources
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.Properties.Resources.resources
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.csproj.GenerateResource.cache
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.csproj.CoreCompileInputs.cache
@@ -63,6 +62,7 @@ C:\GitHub\BookStoreManager\BookStore\bin\Debug\DAO.pdb
 C:\GitHub\BookStoreManager\BookStore\bin\Debug\DTO.pdb
 C:\GitHub\BookStoreManager\BookStore\bin\Debug\System.Data.SqlClient.xml
 C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BookStore\bin\Debug\BookStore.exe.config
 C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BookStore\bin\Debug\BookStore.exe
 C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BookStore\bin\Debug\BookStore.pdb
@@ -89,3 +89,6 @@ C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookSt
 C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BookStore\obj\Debug\BookStore.pdb
 C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BookStore\obj\Debug\BookStore.FrmDoanhThu.resources
 C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BookStore\obj\Debug\BookStore.FrmNhaCungCap.resources
+=======
+C:\GitHub\BookStoreManager\BookStore\obj\Debug\BookStore.FrmQuanLyNhaSach.resources
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f

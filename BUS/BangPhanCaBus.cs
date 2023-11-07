@@ -28,5 +28,9 @@ namespace BUS
         {
             return pcDao.Search(key,value);
         }
+        public void SuaPhanCa(string MaCaSua, string MaNVSua, BangPhanCa pc)
+        {
+            pcDao.Sua(MaCaSua,MaNVSua, pc);
+        }
     }
 }

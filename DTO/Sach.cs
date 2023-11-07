@@ -10,10 +10,11 @@ namespace DTO
     public class Sach
     {
         private string maSach;
-        private string maNhomSach;
         private string tenSach;
         private float donGia;
         private int tonKho;
+        private string maNhomSach;
+        private string tenNhomSach;
 
         public Sach()
         {
@@ -22,31 +23,28 @@ namespace DTO
         public Sach(DataRow row)
         {
             MaSach = row["MaSach"].ToString();
-            MaNhomSach = row["MaNhomSach"].ToString();
             TenSach = row["TenSach"].ToString();
-            DonGia = (float)Convert.ToDouble(row["DonGia"]);
-            TonKho = (int)row["TonKho"];
+            DonGia = (float)Convert.ToSingle(row["DonGia"]);
+            TonKho = (int)Convert.ToInt32(row["TonKho"]);
+            MaNhomSach = row["MaNhomSach"].ToString();
+            TenNhomSach = row["TenNhomSach"].ToString();
         }
 
-        public Sach(string maSach, string maNhomSach, string tenSach, float donGia, int tonKho)
+        public Sach(string maSach, string tenSach, float donGia, int tonKho,  string maNhomSach, string tenNhomSach)
         {
             this.maSach = maSach;
-            this.maNhomSach = maNhomSach;
             this.tenSach = tenSach;
             this.donGia = donGia;
             this.tonKho = tonKho;
+            this.maNhomSach = maNhomSach;
+            this.tenNhomSach = tenNhomSach;
+
         }
 
         public string MaSach
         {
             get => maSach;
             set => maSach = value; 
-        }
-
-        public string MaNhomSach
-        {
-            get => maNhomSach;
-            set => maNhomSach = value; 
         }
 
         public string TenSach
@@ -65,6 +63,16 @@ namespace DTO
         {
             get => tonKho;
             set => tonKho = value;
+        }
+        public string TenNhomSach
+        {
+            get => tenNhomSach;
+            set => tenNhomSach = value;
+        } 
+        public string MaNhomSach
+        {
+            get => maNhomSach;
+            set => maNhomSach = value; 
         }
     }
 }

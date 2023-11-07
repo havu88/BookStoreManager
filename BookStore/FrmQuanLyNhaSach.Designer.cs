@@ -1,6 +1,6 @@
 ﻿namespace BookStore
 {
-    partial class FrmNhanVien
+    partial class FrmQuanLyNhaSach
     {
         /// <summary>
         /// Required designer variable.
@@ -79,6 +79,7 @@
             this.lbl_MaCa = new System.Windows.Forms.Label();
             this.lbl_ThongTinPhanCa = new System.Windows.Forms.Label();
             this.lbl_QLPhanCa = new System.Windows.Forms.Label();
+            this.btn_SuaPhanCa = new System.Windows.Forms.Button();
             this.tc_QLNV.SuspendLayout();
             this.tp_QLNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSNV)).BeginInit();
@@ -154,7 +155,6 @@
             this.cbo_Loai.Name = "cbo_Loai";
             this.cbo_Loai.Size = new System.Drawing.Size(97, 33);
             this.cbo_Loai.TabIndex = 124;
-            this.cbo_Loai.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btn_Luong
             // 
@@ -475,6 +475,7 @@
             // 
             // tp_QLPhanCa
             // 
+            this.tp_QLPhanCa.Controls.Add(this.btn_SuaPhanCa);
             this.tp_QLPhanCa.Controls.Add(this.cbo_LoaiTimKiem);
             this.tp_QLPhanCa.Controls.Add(this.txt_TimKiemPhanCa);
             this.tp_QLPhanCa.Controls.Add(this.btn_ThoatCa);
@@ -502,40 +503,63 @@
             // 
             // cbo_LoaiTimKiem
             // 
+            this.cbo_LoaiTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_LoaiTimKiem.FormattingEnabled = true;
             this.cbo_LoaiTimKiem.Items.AddRange(new object[] {
             "Mã Ca",
             "Mã NV"});
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.cbo_LoaiTimKiem.Location = new System.Drawing.Point(1035, 149);
             this.cbo_LoaiTimKiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbo_LoaiTimKiem.Name = "cbo_LoaiTimKiem";
             this.cbo_LoaiTimKiem.Size = new System.Drawing.Size(97, 28);
+=======
+            this.cbo_LoaiTimKiem.Location = new System.Drawing.Point(300, 265);
+            this.cbo_LoaiTimKiem.Name = "cbo_LoaiTimKiem";
+            this.cbo_LoaiTimKiem.Size = new System.Drawing.Size(66, 24);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.cbo_LoaiTimKiem.TabIndex = 170;
             // 
             // txt_TimKiemPhanCa
             // 
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.txt_TimKiemPhanCa.Location = new System.Drawing.Point(876, 151);
             this.txt_TimKiemPhanCa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_TimKiemPhanCa.Name = "txt_TimKiemPhanCa";
             this.txt_TimKiemPhanCa.Size = new System.Drawing.Size(148, 26);
+=======
+            this.txt_TimKiemPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimKiemPhanCa.Location = new System.Drawing.Point(181, 267);
+            this.txt_TimKiemPhanCa.Name = "txt_TimKiemPhanCa";
+            this.txt_TimKiemPhanCa.Size = new System.Drawing.Size(110, 22);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.txt_TimKiemPhanCa.TabIndex = 169;
             // 
             // btn_ThoatCa
             // 
             this.btn_ThoatCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.btn_ThoatCa.Location = new System.Drawing.Point(615, 331);
             this.btn_ThoatCa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.btn_ThoatCa.Location = new System.Drawing.Point(416, 265);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.btn_ThoatCa.Name = "btn_ThoatCa";
             this.btn_ThoatCa.Size = new System.Drawing.Size(112, 35);
             this.btn_ThoatCa.TabIndex = 168;
             this.btn_ThoatCa.Text = "Thoát";
             this.btn_ThoatCa.UseVisualStyleBackColor = true;
+            this.btn_ThoatCa.Click += new System.EventHandler(this.btn_ThoatCa_Click);
             // 
             // btn_XoaCa
             // 
             this.btn_XoaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.btn_XoaCa.Location = new System.Drawing.Point(447, 331);
             this.btn_XoaCa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.btn_XoaCa.Location = new System.Drawing.Point(185, 215);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.btn_XoaCa.Name = "btn_XoaCa";
             this.btn_XoaCa.Size = new System.Drawing.Size(112, 35);
             this.btn_XoaCa.TabIndex = 167;
@@ -546,8 +570,12 @@
             // btb_ThemCa
             // 
             this.btb_ThemCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.btb_ThemCa.Location = new System.Drawing.Point(278, 331);
             this.btb_ThemCa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.btb_ThemCa.Location = new System.Drawing.Point(88, 215);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.btb_ThemCa.Name = "btb_ThemCa";
             this.btb_ThemCa.Size = new System.Drawing.Size(112, 35);
             this.btb_ThemCa.TabIndex = 165;
@@ -558,8 +586,12 @@
             // btn_TimKiemPhanCa
             // 
             this.btn_TimKiemPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.btn_TimKiemPhanCa.Location = new System.Drawing.Point(754, 151);
             this.btn_TimKiemPhanCa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.btn_TimKiemPhanCa.Location = new System.Drawing.Point(88, 266);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.btn_TimKiemPhanCa.Name = "btn_TimKiemPhanCa";
             this.btn_TimKiemPhanCa.Size = new System.Drawing.Size(112, 35);
             this.btn_TimKiemPhanCa.TabIndex = 164;
@@ -571,11 +603,17 @@
             // dgv_DSPC
             // 
             this.dgv_DSPC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.dgv_DSPC.Location = new System.Drawing.Point(51, 434);
             this.dgv_DSPC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgv_DSPC.Name = "dgv_DSPC";
             this.dgv_DSPC.RowHeadersWidth = 62;
             this.dgv_DSPC.Size = new System.Drawing.Size(998, 172);
+=======
+            this.dgv_DSPC.Location = new System.Drawing.Point(416, 98);
+            this.dgv_DSPC.Name = "dgv_DSPC";
+            this.dgv_DSPC.Size = new System.Drawing.Size(370, 140);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.dgv_DSPC.TabIndex = 163;
             this.dgv_DSPC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DSPC_CellContentClick);
             // 
@@ -583,8 +621,12 @@
             // 
             this.lbl_DSPhanCa.AutoSize = true;
             this.lbl_DSPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.lbl_DSPhanCa.Location = new System.Drawing.Point(45, 382);
             this.lbl_DSPhanCa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lbl_DSPhanCa.Location = new System.Drawing.Point(412, 63);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.lbl_DSPhanCa.Name = "lbl_DSPhanCa";
             this.lbl_DSPhanCa.Size = new System.Drawing.Size(159, 29);
             this.lbl_DSPhanCa.TabIndex = 162;
@@ -592,24 +634,36 @@
             // 
             // dtp_NgayLam
             // 
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.dtp_NgayLam.Location = new System.Drawing.Point(447, 249);
             this.dtp_NgayLam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.dtp_NgayLam.Location = new System.Drawing.Point(181, 162);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.dtp_NgayLam.Name = "dtp_NgayLam";
             this.dtp_NgayLam.Size = new System.Drawing.Size(276, 26);
             this.dtp_NgayLam.TabIndex = 161;
             // 
             // txt_MaNV_PC
             // 
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.txt_MaNV_PC.Location = new System.Drawing.Point(447, 195);
             this.txt_MaNV_PC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txt_MaNV_PC.Location = new System.Drawing.Point(181, 130);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.txt_MaNV_PC.Name = "txt_MaNV_PC";
             this.txt_MaNV_PC.Size = new System.Drawing.Size(276, 26);
             this.txt_MaNV_PC.TabIndex = 160;
             // 
             // txt_MaCa
             // 
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.txt_MaCa.Location = new System.Drawing.Point(447, 151);
             this.txt_MaCa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txt_MaCa.Location = new System.Drawing.Point(181, 98);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.txt_MaCa.Name = "txt_MaCa";
             this.txt_MaCa.Size = new System.Drawing.Size(276, 26);
             this.txt_MaCa.TabIndex = 159;
@@ -618,8 +672,12 @@
             // 
             this.lbl_NgayLam.AutoSize = true;
             this.lbl_NgayLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.lbl_NgayLam.Location = new System.Drawing.Point(273, 249);
             this.lbl_NgayLam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lbl_NgayLam.Location = new System.Drawing.Point(85, 162);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.lbl_NgayLam.Name = "lbl_NgayLam";
             this.lbl_NgayLam.Size = new System.Drawing.Size(94, 25);
             this.lbl_NgayLam.TabIndex = 158;
@@ -629,8 +687,12 @@
             // 
             this.lbl_MaNV_PC.AutoSize = true;
             this.lbl_MaNV_PC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.lbl_MaNV_PC.Location = new System.Drawing.Point(273, 195);
             this.lbl_MaNV_PC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lbl_MaNV_PC.Location = new System.Drawing.Point(85, 130);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.lbl_MaNV_PC.Name = "lbl_MaNV_PC";
             this.lbl_MaNV_PC.Size = new System.Drawing.Size(130, 25);
             this.lbl_MaNV_PC.TabIndex = 157;
@@ -641,8 +703,12 @@
             // 
             this.lbl_MaCa.AutoSize = true;
             this.lbl_MaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.lbl_MaCa.Location = new System.Drawing.Point(273, 151);
             this.lbl_MaCa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lbl_MaCa.Location = new System.Drawing.Point(85, 98);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.lbl_MaCa.Name = "lbl_MaCa";
             this.lbl_MaCa.Size = new System.Drawing.Size(66, 25);
             this.lbl_MaCa.TabIndex = 156;
@@ -652,8 +718,12 @@
             // 
             this.lbl_ThongTinPhanCa.AutoSize = true;
             this.lbl_ThongTinPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.lbl_ThongTinPhanCa.Location = new System.Drawing.Point(237, 97);
             this.lbl_ThongTinPhanCa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lbl_ThongTinPhanCa.Location = new System.Drawing.Point(84, 63);
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.lbl_ThongTinPhanCa.Name = "lbl_ThongTinPhanCa";
             this.lbl_ThongTinPhanCa.Size = new System.Drawing.Size(264, 29);
             this.lbl_ThongTinPhanCa.TabIndex = 155;
@@ -671,14 +741,29 @@
             this.lbl_QLPhanCa.Text = "Quản lí phân ca";
             this.lbl_QLPhanCa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FrmNhanVien
+            // btn_SuaPhanCa
+            // 
+            this.btn_SuaPhanCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaPhanCa.Location = new System.Drawing.Point(291, 215);
+            this.btn_SuaPhanCa.Name = "btn_SuaPhanCa";
+            this.btn_SuaPhanCa.Size = new System.Drawing.Size(75, 23);
+            this.btn_SuaPhanCa.TabIndex = 171;
+            this.btn_SuaPhanCa.Text = "Sửa";
+            this.btn_SuaPhanCa.UseVisualStyleBackColor = true;
+            this.btn_SuaPhanCa.Click += new System.EventHandler(this.btn_SuaPhanCa_Click);
+            // 
+            // FrmQuanLyNhaSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.tc_QLNV);
+<<<<<<< HEAD:BookStore/FrmNhanVien.Designer.cs
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmNhanVien";
+=======
+            this.Name = "FrmQuanLyNhaSach";
+>>>>>>> 01b504391c09bf49d249397a619e7ff16b5fda2f:BookStore/FrmQuanLyNhaSach.Designer.cs
             this.Text = "FrmNhanVien";
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             this.tc_QLNV.ResumeLayout(false);
@@ -745,5 +830,6 @@
         private System.Windows.Forms.Button btn_TimKiemPhanCa;
         private System.Windows.Forms.DataGridView dgv_DSPC;
         private System.Windows.Forms.Label lbl_DSPhanCa;
+        private System.Windows.Forms.Button btn_SuaPhanCa;
     }
 }

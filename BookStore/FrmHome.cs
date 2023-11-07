@@ -224,10 +224,13 @@ namespace BookStore
         private void btnQuanLy_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmNhanVien frmQuanLy = new FrmNhanVien();  
+            FrmQuanLyNhaSach frmQuanLy = new FrmQuanLyNhaSach();  
             frmQuanLy.ShowDialog();
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
