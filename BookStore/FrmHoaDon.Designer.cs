@@ -44,98 +44,99 @@
             // lbMaHD
             // 
             this.lbMaHD.AutoSize = true;
-            this.lbMaHD.Location = new System.Drawing.Point(222, 57);
+            this.lbMaHD.Location = new System.Drawing.Point(250, 71);
             this.lbMaHD.Name = "lbMaHD";
-            this.lbMaHD.Size = new System.Drawing.Size(57, 16);
+            this.lbMaHD.Size = new System.Drawing.Size(67, 20);
             this.lbMaHD.TabIndex = 0;
             this.lbMaHD.Text = "lbMaHD";
             // 
             // lbTenKH
             // 
             this.lbTenKH.AutoSize = true;
-            this.lbTenKH.Location = new System.Drawing.Point(222, 126);
+            this.lbTenKH.Location = new System.Drawing.Point(250, 158);
             this.lbTenKH.Name = "lbTenKH";
-            this.lbTenKH.Size = new System.Drawing.Size(60, 16);
+            this.lbTenKH.Size = new System.Drawing.Size(70, 20);
             this.lbTenKH.TabIndex = 1;
             this.lbTenKH.Text = "lbTenKH";
             // 
             // lbSoLuong
             // 
             this.lbSoLuong.AutoSize = true;
-            this.lbSoLuong.Location = new System.Drawing.Point(222, 264);
+            this.lbSoLuong.Location = new System.Drawing.Point(250, 330);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(72, 16);
+            this.lbSoLuong.Size = new System.Drawing.Size(86, 20);
             this.lbSoLuong.TabIndex = 2;
             this.lbSoLuong.Text = "lbSoLuong";
             // 
             // lbTriGiaHD
             // 
             this.lbTriGiaHD.AutoSize = true;
-            this.lbTriGiaHD.Location = new System.Drawing.Point(222, 336);
+            this.lbTriGiaHD.Location = new System.Drawing.Point(250, 420);
             this.lbTriGiaHD.Name = "lbTriGiaHD";
-            this.lbTriGiaHD.Size = new System.Drawing.Size(75, 16);
+            this.lbTriGiaHD.Size = new System.Drawing.Size(87, 20);
             this.lbTriGiaHD.TabIndex = 3;
             this.lbTriGiaHD.Text = "lbTriGiaHD";
             // 
             // lbNgayXuatHD
             // 
             this.lbNgayXuatHD.AutoSize = true;
-            this.lbNgayXuatHD.Location = new System.Drawing.Point(222, 194);
+            this.lbNgayXuatHD.Location = new System.Drawing.Point(250, 242);
             this.lbNgayXuatHD.Name = "lbNgayXuatHD";
-            this.lbNgayXuatHD.Size = new System.Drawing.Size(97, 16);
+            this.lbNgayXuatHD.Size = new System.Drawing.Size(115, 20);
             this.lbNgayXuatHD.TabIndex = 4;
             this.lbNgayXuatHD.Text = "lbNgayXuatHD";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 57);
+            this.label1.Location = new System.Drawing.Point(56, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 16);
+            this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mã Hoá Đơn:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 126);
+            this.label2.Location = new System.Drawing.Point(56, 158);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 16);
+            this.label2.Size = new System.Drawing.Size(128, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tên Khách Hàng";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 194);
+            this.label3.Location = new System.Drawing.Point(56, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 16);
+            this.label3.Size = new System.Drawing.Size(151, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Ngày Xuất Hoá Đơn";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 264);
+            this.label4.Location = new System.Drawing.Point(56, 330);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Số Lượng";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 336);
+            this.label5.Location = new System.Drawing.Point(56, 420);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 16);
+            this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Thành Tiền";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(167, 395);
+            this.btnClose.Location = new System.Drawing.Point(188, 494);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(79, 28);
+            this.btnClose.Size = new System.Drawing.Size(89, 35);
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "Đóng";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -143,9 +144,9 @@
             // 
             // FrmHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 447);
+            this.ClientSize = new System.Drawing.Size(634, 559);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -157,6 +158,7 @@
             this.Controls.Add(this.lbSoLuong);
             this.Controls.Add(this.lbTenKH);
             this.Controls.Add(this.lbMaHD);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHoaDon";

@@ -26,5 +26,15 @@ namespace BUS
         {
             return (HoaDonDAO.Instance.thanhToanHD(maHD));  
         }
+
+        public DataTable LayDanhSachHoaDon()
+        {
+            return HoaDonDAO.Instance.LayDanhSachHoaDon();
+        }
+
+        public float TinhDoanhThu(string NgayXuatHD)
+        {
+            return HoaDonDAO.Instance.TinhDoanhThuTheoNgay(NgayXuatHD);
+        }
     }
 }

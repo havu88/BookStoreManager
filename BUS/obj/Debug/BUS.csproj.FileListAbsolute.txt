@@ -37,3 +37,16 @@ C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.dll
 C:\GitHub\BookStoreManager\BUS\obj\Debug\BUS.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\DAO.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\DTO.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\DAO.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\DTO.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\obj\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\BUS\obj\Debug\BUS.pdb

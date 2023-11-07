@@ -31,3 +31,14 @@ C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.dll
 C:\GitHub\BookStoreManager\DAO\obj\Debug\DAO.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\bin\Debug\DAO.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\bin\Debug\DAO.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\bin\Debug\DTO.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\bin\Debug\DTO.pdb
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\obj\Debug\DAO.dll
+C:\Users\ADMIN\Desktop\SPKT\HKI_23_24\DBMS330284_23_1_05\Project\Test_Git\BookStore\BookStoreManager\DAO\obj\Debug\DAO.pdb
